@@ -23,6 +23,7 @@ client.on('ready', () => {
 
   console.log(`Reddit Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`)
     setInterval(() => {
+        //dafak
         const random = Math.floor(Math.random() * (presence.length - 1) + 1);
         client.user.setActivity(presence[random]);
     }, 5000)
